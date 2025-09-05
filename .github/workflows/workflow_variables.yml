@@ -4,16 +4,16 @@ on:
   workflow_dispatch
 
 env:
-  cloud: google-cloud
+  Greet: Hello
 
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
     env:
-      Greeting: Hello
+      Name: Hello
     steps:
-      - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name is using $cloud!"
+      - name: "WELCOME"
+        run: echo "$Greet I am $Name working on $files"
         env:
-          First_Name: Vishal
+          files: GitHub workflows
 
