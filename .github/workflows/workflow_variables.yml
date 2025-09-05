@@ -10,7 +10,7 @@ jobs:
   greeting_job:
     runs-on: ubuntu-latest
     env:
-      Name: Hello
+      Name: Somesh
     steps:
       - name: "WELCOME"
         run: echo "$Greet I am $Name working on $files"
